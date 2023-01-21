@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="cron_check_status_sentoo_payment_tx" model="ir.cron">
+        <field name="name">Sentoo payment: check transaction status</field>
+        <field name="model_id" ref="model_payment_provider" />
+        <field name="state">code</field>
+        <field name="code">model._cron_sentoo_payment_status()</field>
+        <field name="user_id" ref="base.user_root" />
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+    </record>
+
+</odoo>

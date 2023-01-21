@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="payment_provider_sentoo" model="payment.provider">
+        <field name="name">Sentoo Payment</field>
+        <field name="display_as">Sentoo Payment</field>
+        <field name="image_128" type="base64" file="payment_sentoo/static/description/icon.png"/>
+        <field name="module_id" ref="base.module_payment_sentoo"/>
+        <field name="payment_icon_ids"
+               eval="[(6, 0, [
+                        ref('payment.payment_icon_cc_mastercard'),
+                        ref('payment.payment_icon_cc_visa'),
+                        ref('payment.payment_icon_sadad'),
+                        ref('payment.payment_icon_mada'),
+                    ])]"/>
+        <field name="code">sentoo</field>
+        <field name="redirect_form_view_id" ref="redirect_form"/>
+    </record>
+
+</odoo>
