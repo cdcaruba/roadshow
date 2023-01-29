@@ -5,8 +5,8 @@
     'version': '16.0.1.0.0',
     'category': 'Accounting/Payment Providers',
     'summary': "Sentoo payment provider covering Aruba region.",
-    'author': "Mainframe Monkey",
-    'website': "https://www.mainframemonkey.com",
+    'author': "Caribbean Data Challengers",
+    'website': "https://www.cdcaruba.com/sentoo",
     'depends': ['account_payment'],
     'data': [
         'data/payment_cron.xml',
